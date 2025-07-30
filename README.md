@@ -11,6 +11,9 @@ Proyecto realizado con Django para simular un sistema de stock para una empresa.
 - Alerta cuando el stock llega a un mínimo.
 - Mostrar listado de productos existentes.
 
+## Credencial
+- Username: adminDiana
+- Password: proyecto-2
 
 ## Preview
 
@@ -19,6 +22,8 @@ Proyecto realizado con Django para simular un sistema de stock para una empresa.
 
 #### Catálogo de productos
 <img src='/stockSystem/img/preview-catalog.png'>
+
+
 
 ***
 
@@ -35,6 +40,9 @@ Django project to simulate a stock system for a company.
 - Alert when stock reachs a minimum amount.
 - Show of all available products.
 
+## LoginDetails
+- Username: adminDiana
+- Password: proyecto-2
 
 ## Preview
 
