@@ -1,0 +1,16 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+<div class="form-create">
+
+
+    <h2>Registrar nuevo producto</h2>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+    </form>
+</div>
+{% endblock %}

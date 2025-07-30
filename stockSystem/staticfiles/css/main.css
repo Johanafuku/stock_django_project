@@ -1,0 +1,178 @@
+body {
+  background-color: #3894bb;
+  color: #4F4F4F;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  padding-bottom: 4em; }
+  body footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #4F4F4F; }
+
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .container.header .main-menu ul {
+    display: flex;
+    gap: 20px; }
+  .container.header .main-menu li {
+    list-style: none; }
+    .container.header .main-menu li a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #4F4F4F; }
+    .container.header .main-menu li a:hover {
+      color: #F6C90E; }
+
+.hero {
+  margin-top: 50px; }
+  .hero h1, .hero p {
+    font-size: 1.5rem;
+    color: #4F4F4F; }
+  .hero p {
+    font-size: 1.3rem; }
+
+.opciones {
+  margin-top: 100px; }
+  .opciones ul {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center; }
+    .opciones ul li {
+      list-style: none; }
+      .opciones ul li a {
+        text-decoration: none;
+        color: #E5E5E5;
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+        padding: 25px;
+        background-color: #4F4F4F; }
+      .opciones ul li a:hover {
+        background-color: #F6C90E;
+        color: #4F4F4F; }
+
+.form-create {
+  max-width: 80%; }
+  .form-create label {
+    font-weight: 600;
+    color: #1B1B1E; }
+  .form-create input[type='text'], .form-create input[type='number'] {
+    width: 300px; }
+  .form-create input:focus {
+    outline: none;
+    border: 2px solid #BDBDBD; }
+  .form-create form p:nth-child(3) label {
+    padding-right: 47px; }
+  .form-create form p:nth-child(4) label {
+    padding-right: 110px; }
+  .form-create form p:nth-child(5) label {
+    padding-right: 77px; }
+
+.form-provider {
+  max-width: 80%; }
+  .form-provider label {
+    font-weight: 600;
+    color: #1B1B1E; }
+  .form-provider form p:nth-child(3) label {
+    padding-right: 60px; }
+  .form-provider form input[type='text'] {
+    width: 300px; }
+  .form-provider form input:focus {
+    outline: none;
+    border: 2px solid #BDBDBD; }
+
+.add-stock-title {
+  margin-bottom: 40px; }
+
+.form-add {
+  max-width: 80%; }
+  .form-add label {
+    font-weight: 600;
+    color: #1B1B1E; }
+  .form-add li {
+    display: none; }
+  .form-add select {
+    width: 300px; }
+  .form-add form p:nth-child(3) label {
+    padding-right: 9px; }
+  .form-add form input[type='number'] {
+    width: 225px; }
+  .form-add form input:focus {
+    outline: none;
+    border: 2px solid #BDBDBD; }
+  .form-add form a {
+    text-decoration: none;
+    color: #F6C90E;
+    font-weight: 600;
+    padding-left: 20px; }
+  .form-add form a:hover {
+    color: #1B1B1E; }
+
+.form-transfer {
+  margin-top: 30px; }
+  .form-transfer form label {
+    font-weight: 600;
+    color: #1B1B1E; }
+  .form-transfer form input:focus {
+    outline: none;
+    border: 2px solid #BDBDBD; }
+  .form-transfer form a {
+    text-decoration: none;
+    color: #F6C90E;
+    font-weight: 600;
+    padding-left: 20px; }
+  .form-transfer form a:hover {
+    color: #1B1B1E; }
+
+button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #BDBDBD;
+  color: #1B1B1E;
+  font-weight: 600;
+  font-size: 1rem; }
+
+button:hover {
+  background-color: #F6C90E;
+  color: #E5E5E5;
+  cursor: pointer; }
+
+.products-title {
+  font-size: 1.4rem;
+  color: #1B1B1E; }
+
+.products {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; }
+  .products .info {
+    border: 1px solid #1B1B1E;
+    padding: 30px;
+    max-width: 100%; }
+    .products .info span {
+      font-weight: 600;
+      color: #1B1B1E; }
+    .products .info p {
+      color: #4F4F4F;
+      margin-bottom: 20px; }
+    .products .info a {
+      text-decoration: none;
+      color: #F6C90E;
+      font-weight: 600;
+      padding-right: 5px; }
+    .products .info a:hover {
+      color: #1B1B1E; }

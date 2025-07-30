@@ -1,0 +1,30 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+<h2 class="products-title">Lista de productos existentes</h2>
+<section class="products">
+
+    {% for product in products %}
+    <div class="info">
+      <p><span>Nombre:</span> {{ product.name }}</p>
+      <p><span>Descripción:</span> {{ product.description }}</p>
+      <p><span>Precio:</span> USD {{product.price}} </p>
+      <p><span>Stock:</span> {{product.stock}} </p>
+      <p><span>Proveedor:</span>
+        {% for proveedor in product.proveedores %}
+          {{ proveedor.name }}{% if not forloop.last %}, {% endif %}
+        {% empty %}
+          Sin proveedor
+        {% endfor %}
+      </p>
+   
+    <a href="{% url 'transfer_stock' product.pk %}">transferir stock</a>
+    <a href="{% url 'add_stock' %}">Agregar stock</a>
+  </div>
+  {% endfor %}
+</section>
+  
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+
+
+<h2 class="add-stock-title">Agregar stock a producto</h2>
+<div class="form-add">
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Agregar stock</button>
+    <a href="{% url 'list_product' %}">Volver</a>
+
+  </form>
+</div>
+  <script>
+    // Auto recargar proveedores cuando se seleccione un producto
+    document.querySelector('[name="producto"]').addEventListener('change', function() {
+      this.form.submit();
+    });
+    </script>
+   
+{% endblock %}

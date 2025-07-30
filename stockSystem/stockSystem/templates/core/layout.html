@@ -1,0 +1,30 @@
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block head_title %}Titulo base{% endblock %}</title>
+  <!--  <link href="{% sass_src 'css/main.scss' %}" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+
+    <div class="container">   
+        {% include '_includes/_header.html' %}
+        <main>
+        {% block page_content %}
+        
+    
+        {% endblock %}
+        </main>
+        {% include '_includes/_footer.html' %}
+    
+    </div>
+    
+   
+</body>
+</html>

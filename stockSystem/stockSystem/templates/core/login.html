@@ -1,0 +1,12 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+    <h1>Login corporativo</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Ingresar</button>
+      </form>
+{% endblock %}

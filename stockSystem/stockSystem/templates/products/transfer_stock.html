@@ -1,0 +1,19 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+    <h2>Transferir stock de {{ producto.name }}</h2>
+<div class="form-transfer">
+    {% if alerta %}
+    <p class="alerta">{{ alerta }}</p>
+    {% endif %}
+
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Transferir</button>
+    <a href="{% url 'list_product' %}">Volver</a>
+    </form>
+</div>
+{% endblock %}

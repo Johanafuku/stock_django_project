@@ -1,0 +1,20 @@
+{% extends 'core/layout.html' %}
+
+{% block head_title %}StockSystem {% endblock %}
+
+{% block page_content %}
+    <div class="hero">
+        <h1>Bienvenido a StockSystem</h1>
+        <p>Sistema interno de la empresa A. Selecciona una acción:</p>
+    </div>
+   
+    <div class="opciones">
+        <ul>
+            {% if request.user.is_authenticated %}
+            <li><a href="{% url 'create_product' %}">Registrar producto</a></li>
+            <li><a href="{% url 'create_provider' %}">Registrar proveedor</a></li>
+            {% endif %}
+            <li><a href="{% url 'list_product' %}">Ver catálogo</a></li>
+        </ul> 
+    </div>       
+{% endblock %}
